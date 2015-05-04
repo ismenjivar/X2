@@ -1,0 +1,66 @@
+<head>
+  <title>X2</title>
+</head>
+
+<body>
+
+  <div class="page-header text-center">
+    <h1>X2</h1>
+    <small>For Transitioning Service Members</small>
+  </div>
+
+</body>
+
+<template name="Home">
+  {{> Nav}}
+
+  <h1>Home</h1>
+
+  <p>
+    Data Title: {{title}}
+  </p>
+</template>
+
+<template name="Testimonials">
+  {{> Nav}}
+
+  <h1>Testimonials</h1>
+</template>
+
+<template name="RFI">
+  {{> Nav}}
+
+  <h1>Requests for Information</h1>
+</template>
+
+<template name="Profile">
+  {{> Nav}}
+
+  <h1>Profile</h1>
+</template>
+
+<template name="Nav">
+  <div class="container">
+    <div class="navbar navbar-default">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="nav-collapse collapse">
+            <ul class="nav navebar-nav">
+              <li class="active"><a href="/">Home</a></li>
+              <li><a href="/testimonials">Testimonials</a></li>
+              <li><a href="/RFI">RFI</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li>{{> loginButtons}}</li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
